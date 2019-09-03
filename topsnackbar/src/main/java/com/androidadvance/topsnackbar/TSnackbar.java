@@ -127,7 +127,7 @@ public final class TSnackbar {
 
     @NonNull
     public static TSnackbar make(@NonNull View view, @NonNull CharSequence text, @Duration int duration) {
-        TSnackbar snackbar = new TSnackbar(view);
+        TSnackbar snackbar = new TSnackbar((ViewGroup) view);
         snackbar.setText(text);
         snackbar.setDuration(duration);
         return snackbar;
